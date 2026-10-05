@@ -42,7 +42,7 @@ st.set_page_config(
 
 load_dotenv()
 
-API_KEY = st.secrets("GEMINI_API_KEY")
+API_KEY = st.secrets["GEMINI_API_KEY"]
 
 if not API_KEY:
     st.error(
